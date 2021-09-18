@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<title>入力</title>
+</head>
+<body>
+	<main class="container">
+		<h1>値を入力してください</h1>
+		<form th:action="@{/output}" th:method="post">
+			<div class="mb-3">
+				<label for="text1" class="form-label">入力その1</label> <input
+					type="text" class="form-control" id="text1" name="text1">
+			</div>
+			<div class="mb-3">
+				<label for="text2" class="form-label">入力その1</label> <input
+					type="text" class="form-control" id="text2" name="text2">
+			</div>
+			<div class="mb-3">
+				<label for="text3" class="form-label">入力その1</label> <input
+					type="text" class="form-control" id="text3" name="text3">
+			</div>
+			<button type="submit" class="btn btn-primary">入力完了</button>
+		</form>
+	</main>
+</body>
+</html>

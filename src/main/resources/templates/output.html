@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<title>出力</title>
+</head>
+<body>
+	<main class="container">
+		<h1>フォームへの入力を出力します</h1>
+		<p class="text-primary" th:text="${output1}">出力1</p>
+		<p class="text-secondary" th:text="${output2.text2}">出力2</p>
+		<p class="text-success" th:text="${output2.text3}">出力3</p>
+	</main>
+</body>
+</html>
