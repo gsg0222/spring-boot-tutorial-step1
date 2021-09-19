@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<!--/* Thymeleafを使うことを宣言。 */-->
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
+<!--/* Bootstrapを使う。本質とは関係ないのであんまり気にしなくていい。 */-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -10,6 +12,7 @@
 <body>
 	<main class="container">
 		<h1>値を入力してください</h1>
+		<!--/* Thymeleafの属性を使用。ただのaction、methodでも動く。 */-->
 		<form th:action="@{/output}" th:method="post">
 			<div class="mb-3">
 				<label for="text1" class="form-label">入力その1</label> <input
